@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>미팅 웹페이지</title>
+    <link rel="stylesheet" href="styles.css">
+     <link rel="icon" href="파비콘.png" type="image/x-icon">
+</head>
+<body>
+    <div id="page1" class="page">
+        <img src="FIETR.png" alt="FIETR" class="animated-title">
+        <div class="animated-date" id="animated-date">6.27</div>
+        <div class="heart-container" id="heart-container" onclick="showPage(2)" style="display: none;">
+            <img src="바닐라빈커피.jpg" alt="New Image" class="new-image" id="new-image">
+        </div>
+        <audio id="background-music" src="your-music-file.mp3" autoplay loop></audio>
+        <audio id="effect-sound" src="your-effect-sound.mp3"></audio>
+    </div>
+    
+    <div id="page2" class="page" style="display:none;">
+        <h1>MEETING</h1>
+        <div class="gitflow-container">
+            <div class="branch main-branch" onmousedown="dragStart(event)">
+                <textarea class="branch-input" oninput="autoResize(this)">A</textarea>
+            </div>
+            <div class="branch develop-branch" onmousedown="dragStart(event)">
+                <textarea class="branch-input" oninput="autoResize(this)">B</textarea>
+            </div>
+            <div class="branch feature-branch" onmousedown="dragStart(event)">
+                <textarea class="branch-input" oninput="autoResize(this)">C</textarea>
+            </div>
+            <div class="branch release-branch" onmousedown="dragStart(event)">
+                <textarea class="branch-input" oninput="autoResize(this)">D</textarea>
+            </div>
+            <div class="branch hotfix-branch" onmousedown="dragStart(event)">
+                <textarea class="branch-input" oninput="autoResize(this)">E</textarea>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
